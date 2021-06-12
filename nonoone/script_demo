@@ -1,0 +1,61 @@
+
+Kịch bản demo cho chatbot:
+
+1. 
+
+U   : hello
+Bot : Chào bạn ! 001 là bot hỗ trợ tìm kiếm và thử đồ đây 😚😚
+      Một số sản phẩm đang hot cho bạn đây:
+      [1]  [2]	[3]
+U   : tôi muốn tìm áo phông cho nam
+Bot : Cho 001 biết 1 số thông tin về b dược không? 😚😚
+	  Bạn thích màu gì?
+U	: Màu xanh
+Bot : Chiều cao của bạn là bao nhiêu?
+U	: 1m64
+Bot : Còn cân nặng thì sao?
+U   : tầm 55 kg
+Bot : Size M sẽ phù hợp với bạn đấy
+	  Gợi ý áo [phông] màu [xanh] cho [nam] cỡ [M] >>
+	  Bạn thử xem
+	  [áo 1] [áo 2] [áo 3] [áo 4]
+U	: Option1 : Click vào button
+	  Option2 : Cho tôi thử áo số 2 đi
+Bot : 🤩🤩🤩
+	  [Ảnh1] [Ảnh2] >> Try-on  {button đặt hàng}
+	  Thế nào b thấy ổn không? 
+U	: được đấy
+Bot : 🤩🤩🤩 Link cửa hàng cho bạn tham khảo đây
+      Bạn cần hỗ gì nữa không?
+U	: chắc thôi
+Bot : Thế b đăng kí giúp tôi tài khoản đi {nếu chưa có login}
+U	: thôi
+Bot : :(
+	  Thế chúc bạn 1 ngày vui vẻ 
+	  Bye bye
+
+2.
+
+U   : [Upload image]
+Bot : Hey! Chào b. Bot 001 hỗ trợ tìm kiếm và thử đồ đây 😚😚
+	  Đợi tôi chút nhé! Tôi sẽ tìm kiếm cho bạn đây
+	  [áo 1] [áo 2] [áo 3] [áo 4]
+U	: Option1 : Click vào button
+	  Option2 : Cho tôi thử áo số 2 đi
+Bot : Cho tôi một số thông tin của bạn đi
+	  Chiều cao bạn là bao nhiêu?
+U   : 1m64
+Bot : Thế cân nặng thì sao?
+U   : khoảng 55 kg
+Bot : Size M sẽ phù hợp với bạn đấy 🤩🤩🤩
+	  [Ảnh1] [Ảnh2] >> Try-on  {button đặt hàng}
+	  Thế nào b thấy ổn không?
+U   : được đấy
+Bot : 🤩🤩🤩 Link cửa hàng cho bạn tham khảo đây
+      Bạn cần hỗ gì nữa không?
+U	: chắc thôi
+Bot : Thế b đăng kí giúp tôi tài khoản đi {nếu chưa có login}
+U	: thôi
+Bot : :(
+	  Thế chúc bạn 1 ngày vui vẻ 
+	  Bye bye

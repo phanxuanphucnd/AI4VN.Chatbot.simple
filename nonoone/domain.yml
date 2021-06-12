@@ -1,0 +1,196 @@
+intents:
+- affirm_agree
+- affirm_disagree
+- bye
+- checkout
+- find_item
+- greet
+- image
+- inform
+- react_positive
+- require_recommend_size
+- thank_you
+entities:
+- age
+- category
+- color
+- gender
+- height
+- numbers
+- size
+- style
+- type_item
+- weight
+slots:
+  age:
+    type: unfeaturized
+  category:
+    type: unfeaturized
+  color:
+    type: unfeaturized
+  gender:
+    type: unfeaturized
+  height:
+    type: unfeaturized
+  numbers:
+    type: unfeaturized
+  size:
+    type: unfeaturized
+  style:
+    type: unfeaturized
+  type_item:
+    type: unfeaturized
+  weight:
+    type: unfeaturized
+templates:
+  utter_greet:
+  - text: "Hey! Chào bạn \U0001F604\n"
+  utter_intro:
+  - text: "NonoOne bot (\U0001F530 001) hỗ trợ tìm kiếm và thử đồ đây! \n \U0001F45A\
+      \ \U0001F455 \U0001F456 \U0001F454 \U0001F457 \U0001F458"
+  utter_suggest_register:
+  - text: "\U0001F514\U0001F514\U0001F514 Nếu bạn chưa có tài khoản \n Đăng kí tài\
+      \ khoản để \U0001F530 001 hỗ trợ nhiều hơn nhé !"
+  utter_care:
+  - text: Chúc bạn một ngày vui vẻ 👌
+  utter_bye:
+  - text: Hẹn gặp lại sau nhé. bb 😄😄
+  - text: Tạm biệt bạn...
+  - text: Bye bye nhé 😄😄
+  utter_what_help:
+  - text: Bạn cần hỗ trợ gì nữa không?
+  utter_react_positive:
+  - text: 😆😆
+  - text: 😄😄
+  utter_react_negative:
+  - text: 😢
+  - text: hix 😞😞
+  - text: buồn bạn 😞😞
+  utter_ask_feedback:
+  - text: Bạn thấy thế nào? 🤔🤔
+  - text: Thế nào, Bạn thấy được không? 🤔🤔
+  utter_suggest_type_item:
+  - text: "Bạn muốn tìm kiếm loại áo nào?\n \t{type1}\n \t{type2}\n \t{type3}\n"
+  utter_ask_info:
+  - text: Cho tôi một số thông tin nhé! 🤔🤔
+  utter_suggest_recommend_size:
+  - text: ''
+    image: '{image}'
+  utter_ask_type_item:
+  - text: Bạn tìm loại nào?
+  utter_ask_color:
+  - text: "Bạn thích màu gì? \n ❤️ - Đỏ \n \U0001F499 - Xanh \n 🔶 - Cam \n ⚫ - Đen \n ⚪ - Trắng \n \U0001F3D0  - Xám"
+  utter_ask_height:
+  - text: "Chiều cao của bạn là bao nhiêu? \n Định dạng: ví dụ - 1m64 "
+  utter_ask_weight:
+  - text: "Cân nặng thì sao? \n Định dạng: ví dụ - 55 kg"
+  utter_listening:
+  - text: 🔰 001 lắng nghe bạn
+  utter_ask_gender:
+  - text: "Dành cho nam hay nữ vậy?\n \U0001F466 - nam \n \U0001F478 - nữ"
+  utter_ask_size:
+  - text: "Bạn mặc cỡ nào?\n Có những cỡ áo như sau: \n \U0001F3F7 - S\n \U0001F3F7\
+      \ - M\n \U0001F3F7 - L\n \U0001F3F7 - XL\n \U0001F3F7 - XXL\n"
+  - text: "Size bạn muốn lựa chọn là size nào? \n Có những cỡ áo như sau: \n \U0001F3F7\
+      \ - S\n \U0001F3F7 - M\n \U0001F3F7 - L\n \U0001F3F7 - XL\n \U0001F3F7 - XXL\n"
+  utter_item_finding:
+  - text: "\U0001F530 001 Gợi ý sản phẩm cho bạn :\n"
+  utter_recommend_item_base_img:
+  - text: ''
+    image: '{image}'
+  utter_button_tryon:
+  - text: ''
+    buttons:
+    - title: Thử mặc
+      payload: /affirm_agree
+  utter_button_checkout:
+  - text: ''
+    buttons:
+    - title: Checkout
+      payload: /checkout
+    - title: Next
+      payload: /affirm_disagree
+  utter_suggest_item:
+  - text: "Bạn tham khảo một số mặt hàng này xem \n {item1} | {item2} | {item3}"
+  utter_respond_trying:
+  - text: "Tôi sẽ thử cho bạn !\n "
+  utter_respond_title:
+  - text: "Ảnh bạn sau khi thử đồ đây \U0001F600\U0001F600 \n"
+  utter_respond_tryon:
+  - text: ''
+    image: '{image}'
+  utter_ask_checkout:
+  - text: Thế bạn mua cái này đêy? 😁😁
+  - text: Thế bạn mua cái này đi, hợp với bạn đấy 😁😁
+  utter_recommend_size:
+  - text: "Gợi ý cỡ áo cho bạn \n"
+    image: '{image}'
+  utter_thank:
+  - text: "Cảm ơn bạn đã tương tác với NonoOne \U0001F530 001 \n Tôi-NonoOne sẽ hỗ\
+      \ trợ bạn hết mình \U0001F618\U0001F618"
+  utter_suggest_stores_title:
+  - text: 'Bạn có thể tham khảo một số cửa hàng sau:'
+  utter_suggest_stores:
+  - text: "\U0001F530 Link : {shop}\n \U0001F4B2 Price : {price}\n"
+  utter_ask_style:
+  - text: Bạn thích mặc áo thoải mái 1 chút hay vừa vặn?
+  utter_buttons_ask_style:
+  - text: ''
+    buttons:
+    - title: Thoải mái
+      payload: rộng
+    - title: Vừa vặn
+      payload: vừa
+  utter_explain_formsize:
+  - text: "\U0001F3F7\U0001F3F7 Để việc gợi ý tốt nhất cho bạn \n Bạn vui lòng đo\
+      \ áo bạn thấy phù hợp nhất của mình và nhập các thông số X, Y, Z, T, H tương\
+      \ ứng như hình sau: \n \n ⛔ Định dạng: X Y Z T H \n Ví dụ: 46 22 42 42 67"
+  utter_default:
+  - text: Tôi chưa hiểu ý bạn lắm. Bạn nói lại giúp tôi đi ☹☹
+  - text: "Tôi mới được hình thành nên chưa hiểu tiếng việt lắm\n Bạn nói lại dùm\
+      \ đi "
+actions:
+- action_recommend_clothes
+- action_recommend_size
+- action_reset_slot
+- action_respond_tryon
+- action_restart
+- action_suggest_item
+- action_suggest_recommend_size
+- action_suggest_stores
+- find_item
+- utter_ask_checkout
+- utter_ask_color
+- utter_ask_feedback
+- utter_ask_gender
+- utter_ask_height
+- utter_ask_info
+- utter_ask_size
+- utter_ask_style
+- utter_ask_type_item
+- utter_ask_weight
+- utter_button_checkout
+- utter_button_tryon
+- utter_buttons_ask_style
+- utter_bye
+- utter_care
+- utter_explain_formsize
+- utter_greet
+- utter_intro
+- utter_item_finding
+- utter_listening
+- utter_react_negative
+- utter_react_positive
+- utter_recommend_item_base_img
+- utter_recommend_size
+- utter_respond_title
+- utter_respond_trying
+- utter_respond_tryon
+- utter_suggest_recommend_size
+- utter_suggest_register
+- utter_suggest_stores_title
+- utter_suggest_type_item
+- utter_thank
+- utter_what_help
+forms:
+- item_form
