@@ -2,6 +2,10 @@
 
 A simplified version of the chatbot used in AI4VN Hackathon 2019.
 
+## How to run
+
+Please refer **[Rasa documentation](https://legacy-docs-v1.rasa.com/1.7.4/)**, use Rasa version `v1.7.4`.
+
 
 ## License
 
